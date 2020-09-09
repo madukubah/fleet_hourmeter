@@ -1,18 +1,16 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Sale Mining',
+    'name': 'Fleet Hourmeter',
     'version': '1.0',
     'author': 'Technoindo.com',
-    'category': 'Sales Management',
+    'category': 'Fleet Management',
     'depends': [
-        'sale_contract',
-        'shipping',
-        'sale_qaqc',
+        'fleet',
     ],
     'data': [
         'views/menu.xml',
-        'views/qaqc_coa.xml',
+        "views/fleet_vehicle_hourmeter.xml",
     ],
     'qweb': [
         # 'static/src/xml/cashback_templates.xml',
