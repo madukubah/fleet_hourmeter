@@ -4,7 +4,7 @@ from odoo import api, fields, models, _
 class FleetVehicleHourmeter(models.Model):
 	_name = "fleet.vehicle.hourmeter"
 
-	name = fields.Char(string="Name", size=100 , required=True, compute="_compute_vehicle_log_name")
+	name = fields.Char(compute='_compute_vehicle_log_name', store=True)
 	date = fields.Date(default=fields.Date.context_today)
 	start = fields.Float('Start Hour')
 	end = fields.Float('End Hour')

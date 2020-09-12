@@ -11,6 +11,8 @@
     'data': [
         'views/menu.xml',
         "views/fleet_vehicle_hourmeter.xml",
+
+        "security/ir.model.access.csv",
     ],
     'qweb': [
         # 'static/src/xml/cashback_templates.xml',
