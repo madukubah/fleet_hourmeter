@@ -10,7 +10,7 @@
     <menuitem name="Vehicle Hourmeter"
               id="fleet_vehicle_hourmeter"
               parent="fleet.fleet_vehicles" 
-              action="fleet_vehicle_hourmeter_action"
+              action="action_fleet_vehicle_hourmeter"
               sequence= "99"
               />
 </odoo>

@@ -9,8 +9,8 @@
         'fleet',
     ],
     'data': [
-        'views/menu.xml',
         "views/fleet_vehicle_hourmeter.xml",
+        'views/menu.xml',
 
         "security/ir.model.access.csv",
     ],
