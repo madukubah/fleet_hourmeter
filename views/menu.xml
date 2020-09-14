@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- <record model="ir.actions.act_window" id="action_fleet_vehicle_hourmeter">
+    <record model="ir.actions.act_window" id="action_fleet_vehicle_hourmeter">
         <field name="name">Vehicle Hourmeter</field>
         <field name="res_model">fleet.vehicle.hourmeter</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-    </record> -->
+    </record>
     
     <menuitem name="Vehicle Hourmeter"
               id="fleet_vehicle_hourmeter"
