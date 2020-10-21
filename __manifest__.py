@@ -10,6 +10,7 @@
     ],
     'data': [
         "views/fleet_vehicle_hourmeter.xml",
+        'views/fleet.xml',
         'views/menu.xml',
 
         "security/ir.model.access.csv",
