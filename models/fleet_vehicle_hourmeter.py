@@ -34,7 +34,7 @@ class FleetVehicleHourmeter(models.Model):
 	date = fields.Date(default=fields.Date.context_today)
 	start = fields.Float('Start Hour')
 	end = fields.Float('End Hour')
-	value = fields.Float('Hourmeter Value', group_operator="max", compute="_compute_value" )
+	value = fields.Float('Hourmeter Value', group_operator="max", compute="_compute_value", store=True )
 	vehicle_id = fields.Many2one('fleet.vehicle', 'Vehicle', required=True)
 
 	@api.depends('vehicle_id', 'date')
