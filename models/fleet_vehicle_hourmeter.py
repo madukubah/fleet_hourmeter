@@ -29,6 +29,7 @@ class FleetVehicle(models.Model):
 
 class FleetVehicleHourmeter(models.Model):
 	_name = "fleet.vehicle.hourmeter"
+	_order = "start asc"
 
 	name = fields.Char(compute='_compute_vehicle_log_name', store=True)
 	date = fields.Date(default=fields.Date.context_today)
@@ -36,6 +37,7 @@ class FleetVehicleHourmeter(models.Model):
 	end = fields.Float('End Hour')
 	value = fields.Float('Hourmeter Value', group_operator="max", compute="_compute_value", store=True )
 	vehicle_id = fields.Many2one('fleet.vehicle', 'Vehicle', required=True)
+	remarks = fields.Char( string='Remarks')
 
 	@api.depends('vehicle_id', 'date')
 	def _compute_vehicle_log_name(self):

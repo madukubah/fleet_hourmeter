@@ -8,6 +8,7 @@
                 <tree string="Hourmeter Logs" editable="top">
                     <field name="date" />
                     <field name="vehicle_id"/>
+                    <field name="remarks"/>
                     <field name="start"/>
                     <field name="end"/>
                     <field name="value" />
